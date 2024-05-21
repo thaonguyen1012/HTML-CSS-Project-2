@@ -1,0 +1,306 @@
+:root {
+    /* Color Palette Style Guide */
+    --primary-primary: #3b71fe;
+    --primary-blue-dark: #145ce6;
+    --primary-blue-dark-20: #283558;
+    --primary-blue-20: #d8e3ff;
+    --primary-blue-10: #ebf1ff;
+    --primary-blue-10: #d5dae8;
+    --primary-blue-20: #d8e3ff;
+    --white-white: #fff;
+    --black-main-color: #141416;
+    --gray-1: #23262f;
+    --gray-2: #353945;
+    --gray-3: #777e90;
+    --gray-4: #b1b5c3;
+    --gray-5: #e6e8ec;
+    --gray-6: #f4f5f6;
+    --gray-7: #f4f5f9;
+    --secondary-yellow-secondary-yellow: #ffd166;
+    --secondary-pest-seconday-g-pest: #7ed4cf;
+    --secondary-pest-pest-10: #f2fbfa;
+    --secondary-pest-pest-90: #2c373f;
+    --secondary-errow-errow: #f65540;
+    --secondary-red-secondary-g: #ff6370;
+    --secondary-red-red-10: #ffeff1;
+    --secondary-red-red-20: #ffe0e2;
+    --secondary-green-success: #58c27d;
+    --secondary-green-green-10: #eef9f2;
+    --secondary-green-green-20: #def3e5;
+    --secondary-orange-secondary: #fa8f54;
+    --secondary-orange-orange-10: #fff4ee;
+    --secondary-orange-orange-20: #fee9dd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+}
+
+/* Typography Style Guide */
+.headinghero {
+    font-size: 64px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.headingH1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+}
+
+.headingH2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.headingH3 {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.headinginter-20-bold {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.headingH4-20-Medium {
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+}
+
+.bodybodi-18-bold {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.bodybodi-18-medium {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+}
+
+.bodybodi-18-regular {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+}
+
+.bodybodi-16-bold {
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.bodybodi-16-medium {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.bodybodi-16-regular {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.bodybodi-14-bold {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.bodybodi-14-medium {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+}
+
+.bodybodi-14-regular {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+}
+
+.bodybodi-12-Bold {
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.bodybodi-12-Medium {
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.bodybodi-12-regular {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.bodybodi-10-bold {
+    font-size: 10px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.bodybodi-10-medium {
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.bodybodi-10-regular {
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Header */
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0px 6px 30px 0px rgba(15, 15, 15, 0.06);
+}
+
+
+.header .navbar {
+    width: 1319px;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar_midle ul {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar_midle ul li a {
+    color: var(--gray-2);
+}
+
+.header .navbar_right {
+    display: flex;
+    width: 169px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar_right_currency {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.header .navbar_right_currency .currency {
+    color: var(--gray-3);
+}
+
+.navbar_right .vertical-line {
+    width: 1px;
+    height: 32px;
+    opacity: 0.5;
+    background: var(--gray-4);
+}
+
+.header .profile__avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
