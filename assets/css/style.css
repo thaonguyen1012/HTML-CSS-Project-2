@@ -17,10 +17,10 @@
     --gray-6: #f4f5f6;
     --gray-7: #f4f5f9;
     --secondary-yellow-secondary-yellow: #ffd166;
-    --secondary-pest-seconday-g-pest: #7ed4cf;
+    --secondary-pest-secondary-g-pest: #7ed4cf;
     --secondary-pest-pest-10: #f2fbfa;
     --secondary-pest-pest-90: #2c373f;
-    --secondary-errow-errow: #f65540;
+    --secondary-error-error: #f65540;
     --secondary-red-secondary-g: #ff6370;
     --secondary-red-red-10: #ffeff1;
     --secondary-red-red-20: #ffe0e2;
@@ -47,7 +47,7 @@ body {
 
 /* Typography Style Guide */
 .headinghero {
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -56,16 +56,16 @@ body {
 }
 
 .headingH1 {
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.04rem;
 }
 
 .headingH2 {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -74,7 +74,7 @@ body {
 }
 
 .headingH3 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -83,7 +83,7 @@ body {
 }
 
 .headinginter-20-bold {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -92,7 +92,7 @@ body {
 }
 
 .headingH4-20-Medium {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -101,7 +101,7 @@ body {
 }
 
 .bodybodi-18-bold {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -110,7 +110,7 @@ body {
 }
 
 .bodybodi-18-medium {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -119,7 +119,7 @@ body {
 }
 
 .bodybodi-18-regular {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -128,7 +128,7 @@ body {
 }
 
 .bodybodi-16-bold {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -137,7 +137,7 @@ body {
 }
 
 .bodybodi-16-medium {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -146,7 +146,7 @@ body {
 }
 
 .bodybodi-16-regular {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -155,7 +155,7 @@ body {
 }
 
 .bodybodi-14-bold {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -164,7 +164,7 @@ body {
 }
 
 .bodybodi-14-medium {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -173,7 +173,7 @@ body {
 }
 
 .bodybodi-14-regular {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -182,7 +182,7 @@ body {
 }
 
 .bodybodi-12-Bold {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -191,7 +191,7 @@ body {
 }
 
 .bodybodi-12-Medium {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -200,7 +200,7 @@ body {
 }
 
 .bodybodi-12-regular {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -209,7 +209,7 @@ body {
 }
 
 .bodybodi-10-bold {
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -218,7 +218,7 @@ body {
 }
 
 .bodybodi-10-medium {
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -227,7 +227,7 @@ body {
 }
 
 .bodybodi-10-regular {
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -241,6 +241,12 @@ a {
     display: inline-block;
 }
 
+.content {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* Header */
 .header {
     width: 100vw;
@@ -249,28 +255,29 @@ a {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 100;
+    background-color: var(--white-white, #fff);
     box-shadow: 0px 6px 30px 0px rgba(15, 15, 15, 0.06);
 }
 
-
 .header .navbar {
-    width: 1319px;
-    padding: 30px 60px;
+    width: 1320px;
+    max-width: calc(100% - 120px); 
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header .navbar_midle ul {
+.header .navbar_middle ul {
     display: flex;
     width: 250px;
     justify-content: space-between;
     align-items: center;
 }
 
-.header .navbar_midle ul li a {
-    color: var(--gray-2);
+.header .navbar_middle ul li a {
+    color: var(--gray-2, #353945);
 }
 
 .header .navbar_right {
@@ -288,14 +295,14 @@ a {
 }
 
 .header .navbar_right_currency .currency {
-    color: var(--gray-3);
+    color: var(--gray-3, #777e90);
 }
 
 .navbar_right .vertical-line {
     width: 1px;
     height: 32px;
     opacity: 0.5;
-    background: var(--gray-4);
+    background: var(--gray-4, #b1b5c3);
 }
 
 .header .profile__avatar {
@@ -303,4 +310,173 @@ a {
     height: 32px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+/* Hero */
+.hero {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.hero_info {
+    width: 502px;
+    position: relative;
+}
+
+.hero_title-yellow {
+    color: #f5b318;
+}
+
+.hero_info .ornament {
+    position: absolute;
+    top: 125px;
+    right: 95px;
+}
+
+.hero_desc {
+    margin-top: 30px;
+    color: var(--gray-3, #777e90);
+}
+
+.hero_info_btn-cta {
+    margin-top: 48px;
+    display: flex;
+    width: 317px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px 8px 44px;
+    color: var(--gray-1, #23262f);
+    border-radius: 31px;
+    background: var(--white-white, #fff);
+    box-shadow: -16px 22px 42px 0px rgba(0, 31, 77, 0.12);
+}
+
+.hero_btn_arrow {
+    padding: 10px;
+    background: var(--primary-primary, #3b71fe);
+    border-radius: 50%;
+}
+
+.hero_review {
+    margin-top: 70px;
+    width: 281px;
+}
+
+.hero_review .review_customer {
+    color: var(--gray-3, #777e90);
+}
+
+.hero_review .review_detail {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_review .review_detail .review_overall {
+    color: var(--Black-main-color, #141416);
+}
+
+.hero_review .review_rating {
+    color: var(--primary-primary, #3b71fe);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.hero_review .review_number {
+    color: var(--gray-3, #777e90);
+}
+
+.hero_review .review_detail .vertical-line {
+    width: 1px;
+    height: 52px;
+    background: var(--gray-5, #e6e8ec);
+}
+
+.hero_info .decoration {
+    position: absolute;
+    top: 348px;
+    right: 462px;
+}
+
+/* Hero Image */
+
+.hero_image_wrap {
+    position: relative;
+}
+
+.hero_image .background_element {
+    position: relative;
+}
+
+.hero_image .background_element .ellipse_2169 {
+    position: absolute;
+    top: 189px;
+    left: 348px;
+    width: 380px;
+    height: 380px;
+    border-radius: 380px;
+    background: #0b7dcf;
+    filter: blur(199.5px);
+}
+
+.hero_image .background_element .ellipse_2170 {
+    position: absolute;
+    top: 79px;
+    left: 185px;
+    width: 492px;
+    height: 492px;
+    border-radius: 492px;
+    border: 1px solid #fff;
+    background: linear-gradient(
+        193deg,
+        rgba(255, 255, 255, 0.29) 61.18%,
+        rgba(255, 255, 255, 0) 95.07%
+    );
+    box-shadow: 0px 0px 53.9px 0px rgba(0, 163, 255, 0.05);
+    backdrop-filter: blur(27.5px);
+}
+
+.hero_image .ornament_82 {
+    position: absolute;
+    top: 55px;
+    left: 560px;
+}
+
+.hero_image .background_element {
+    position: relative; 
+    z-index: 1; 
+}
+
+.hero_image .background_element .ellipse_2169 {
+    position: absolute;
+    top: 190px;
+    left: 315px;
+}
+
+.hero_image .background_element .ellipse_2171 {
+position: absolute;
+top: 130px;
+left: 174px;
+}
+
+.hero_image .background_element .ellipse_2173 {
+    position: absolute;
+    top: 92px;
+    left: 393px;
+}
+
+.hero_image .background_element .ellipse_2172 {
+    position: absolute;
+    top: 236px;
+    left: 584px;
+}
+
+.man {
+    position: absolute;
+    top: 0;
+    z-index: 10;
 }
