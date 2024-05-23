@@ -243,6 +243,7 @@ a {
 
 .content {
     width: 1170px;
+    max-width: calc(100% - 48px);
     margin-right: auto;
     margin-left: auto;
 }
@@ -262,7 +263,7 @@ a {
 
 .header .navbar {
     width: 1320px;
-    max-width: calc(100% - 120px); 
+    max-width: calc(100% - 120px);
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
@@ -313,9 +314,18 @@ a {
 }
 
 /* Hero */
+.section_hero {
+    height: 645px;
+}
+
+.section_hero .content {
+    height: 100%;
+}
+
 .hero {
     margin-top: 15px;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: stretch;
 }
@@ -323,6 +333,7 @@ a {
 .hero_info {
     width: 502px;
     position: relative;
+    align-self: center;
 }
 
 .hero_title-yellow {
@@ -447,8 +458,8 @@ a {
 }
 
 .hero_image .background_element {
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
 }
 
 .hero_image .background_element .ellipse_2169 {
@@ -458,9 +469,9 @@ a {
 }
 
 .hero_image .background_element .ellipse_2171 {
-position: absolute;
-top: 130px;
-left: 174px;
+    position: absolute;
+    top: 130px;
+    left: 174px;
 }
 
 .hero_image .background_element .ellipse_2173 {
@@ -479,4 +490,148 @@ left: 174px;
     position: absolute;
     top: 0;
     z-index: 10;
+}
+
+.hero_image .card {
+    position: absolute;
+    z-index: 20;
+    left: 191px;
+    top: 430px;
+    padding: 18px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(243, 243, 243, 0.29);
+    background: linear-gradient(
+        193deg,
+        rgba(255, 255, 255, 0.29) 61.18%,
+        rgba(255, 255, 255, 0) 95.07%
+    );
+    box-shadow: 0px 0px 53.9px 0px rgba(0, 163, 255, 0.05);
+    backdrop-filter: blur(20px);
+}
+.hero_image .card_247 {
+    margin-top: 17px;
+    color: var(--gray-2, #353945);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero_image .card_tile {
+    margin-top: 5px;
+    color: var(--gray-3, #777e90);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+/* Partner */
+.section_partner {
+    background: var(--gray-7, #f4f5f9);
+}
+
+.section_partner .partner {
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Trip Planning */
+.trip-planning .content {
+    padding: 70px 0;
+}
+
+.trip-planning .title {
+    color: var(--gray-1, #23262f);
+    text-align: center;
+}
+
+.trip-planning p.desc {
+    margin-top: 24px;
+    color: var(--gray-2, #353945);
+    text-align: center;
+}
+
+.trip-planning .card_list {
+    margin-top: 50px;
+    padding: 21px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.trip-planning .card_item {
+    width: 272px;
+    border-radius: 12px;
+    color: var(--gray-2, #353945);
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.52;
+}
+
+.trip-planning .card_item:first-child {
+    padding: 21px 36px 21px 35px;
+    background: var(--secondary-green-green-10, #eef9f2);
+}
+
+.trip-planning .card_item:nth-child(2) {
+    padding: 21px 31px;
+    background: var(--secondary-orange-orange-10, #fff4ee);
+}
+
+.trip-planning .card_item:nth-child(3) {
+    padding: 21px 50px;
+    background: var(--primary-blue-10, #ebf1ff);
+}
+
+.trip-planning .card_item .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.trip-planning .card_item > div {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.trip-planning .card_item:first-child > div {
+    background: var(--secondary-green-success, #58c27d);
+}
+
+.trip-planning .card_item:nth-child(2) > div {
+    background: var(--secondary-orange-secondary, #FA8F54);
+}
+
+.trip-planning .card_item:nth-child(3) > div {
+background: var(--primary-primary, #3B71FE);
+}
+
+.trip-planning .card_item .card_content {
+    margin-top: 16px;
+}
+
+.trip-planning .card_item a {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.trip-planning .card_item a span {
+    color: var(--gray-2, #353945);
 }
