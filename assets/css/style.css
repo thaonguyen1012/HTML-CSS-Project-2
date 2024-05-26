@@ -613,11 +613,11 @@ a {
 }
 
 .trip-planning .card_item:nth-child(2) > div {
-    background: var(--secondary-orange-secondary, #FA8F54);
+    background: var(--secondary-orange-secondary, #fa8f54);
 }
 
 .trip-planning .card_item:nth-child(3) > div {
-background: var(--primary-primary, #3B71FE);
+    background: var(--primary-primary, #3b71fe);
 }
 
 .trip-planning .card_item .card_content {
@@ -634,4 +634,122 @@ background: var(--primary-primary, #3B71FE);
 
 .trip-planning .card_item a span {
     color: var(--gray-2, #353945);
+}
+
+/* Booking Steps */
+.book_steps .content {
+    padding: 69px 0;
+    display: flex;
+}
+
+.book_steps .creat_trip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 68px 41px 69px;
+    border-radius: 39px;
+    background: #fee2b6;
+}
+
+.book_steps .creat_trip .card_top {
+    padding: 25px 38px;
+    border-radius: 30px 30px 0px 0px;
+    color: var(--white-white, #fff);
+    background: var(--primary-primary, #3b71fe);
+}
+
+.book_steps .creat_trip .card_top .sub-title {
+    margin-top: 9px;
+    color: var(--gray-6, #f4f5f6);
+}
+
+.book_steps .creat_trip .card_top .btn-input {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 38px;
+    padding: 8px 12px 8px 16px;
+    color: var(--gray-1, #23262f);
+    border-radius: 10px;
+    background: var(--white-white, #fff);
+}
+
+.book_steps .creat_trip .card_top .setup_row {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book_steps .creat_trip .card_top .setup_title {
+    color: var(--gray-7, #f4f5f9);
+}
+
+.book_steps .creat_trip .card_top .setup_sub-title {
+    color: var(--gray-5, #e6e8ec);
+}
+
+.book_steps .creat_trip .card_top .setup_row .row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.book_steps .creat_trip .card_top .setup_row .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: var(--white-white, #fff) solid 5px;
+    border-radius: 50%;
+}
+
+.book_steps .creat_trip .card_top .setup_row .setup_sub-title {
+    margin-left: 34px;
+}
+
+.book_steps .creat_trip .card_bottom {
+    /* Resolve Margin Collapse Problem { 
+    display: flex;
+    flex-direction: column;}
+    */
+    display: flex;
+    flex-direction: column;
+    width: 363px;
+    height: 80px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: var(--white-white, #fff);
+}
+
+.book_steps .creat_trip .card_bottom .price {
+    margin-top: 10px;
+    margin-left: 38px;
+    color: var(--gray-2, #353945);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38462;
+}
+
+.book_steps .creat_trip .card_bottom .price span {
+    color: var(--gray-2, #353945);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.571428;
+}
+
+.book_steps .creat_trip_bottom {
+    margin-top: 26px;
+    width: 199px;
+    display: flex;
+    /* gap: 40px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_steps .creat_trip_bottom .text {
+    color: var(--gray-2, #353945);
+}
+
+.book_steps .creat_trip_bottom .text-gray {
+    color: var(--gray-3, #777E90);
 }
