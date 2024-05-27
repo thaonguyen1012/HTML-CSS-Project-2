@@ -640,6 +640,7 @@ a {
 .book_steps .content {
     padding: 69px 0;
     display: flex;
+    align-items: center;
 }
 
 .book_steps .creat_trip {
@@ -751,5 +752,84 @@ a {
 }
 
 .book_steps .creat_trip_bottom .text-gray {
+    color: var(--gray-3, #777e90);
+}
+
+.book_steps .booking_steps {
+    margin-left: auto;
+    width: 568px;
+}
+
+.book_steps .booking_steps_top {
+    padding-bottom: 26px;
+    border-bottom: 1px dashed var(--gray-3, #777e90);
+}
+
+.book_steps .booking_steps_top .title  {
+    color: var(--gray-1, #23262f);
+}
+
+.book_steps .booking_steps_top .desc {
+    margin-top: 24px;
+    color: var(--gray-2, #353945);
+}
+
+.book_steps .booking_steps_top .column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.book_steps .booking_steps_top .column .row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.book_steps .booking_steps_top .column .row .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: var(--primary-primary, #3b71fe) solid 5px;
+    border-radius: 50%;
+}
+
+.book_steps .booking_steps_bottom {
+    margin-top: 20px;
+}
+
+.book_steps .booking_steps_bottom .quote {
+    color: var(--gray-2, #353945);
+    font-size: 1.6 rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.book_steps .booking_steps_bottom .row {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.book_steps .booking_steps_bottom .row .avatar{
+    width: 70px;
+height: 70px;
+object-fit: cover;
+border-radius: 50%;
+}
+
+.book_steps .booking_steps_bottom .row .column {
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book_steps .booking_steps_bottom .row .column .name {
+    color: var(--gray-2, #353945); 
+}
+
+.book_steps .booking_steps_bottom .row .column .position {
     color: var(--gray-3, #777E90);
 }
