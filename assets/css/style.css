@@ -281,6 +281,12 @@ a {
     color: var(--gray-2, #353945);
 }
 
+.header .navbar_middle ul li a:hover {
+    color: var(--primary-blue-dark);
+    font-weight: bold ;
+    transition-duration: 0.3s;
+}
+
 .header .navbar_right {
     display: flex;
     width: 169px;
@@ -362,6 +368,12 @@ a {
     border-radius: 31px;
     background: var(--white-white, #fff);
     box-shadow: -16px 22px 42px 0px rgba(0, 31, 77, 0.12);
+}
+
+.hero_info_btn-cta:hover {
+    color: var(--white-white, #fff);
+    background: var(--primary-primary, #3b71fe);
+    transition-duration: 0.5s;
 }
 
 .hero_btn_arrow {
