@@ -542,22 +542,22 @@ a {
 }
 
 /* Trip Planning */
-.trip-planning .content {
+.trip_planning .content {
     padding: 70px 0;
 }
 
-.trip-planning .title {
+.trip_planning .title {
     color: var(--gray-1, #23262f);
     text-align: center;
 }
 
-.trip-planning p.desc {
+.trip_planning p.desc {
     margin-top: 24px;
     color: var(--gray-2, #353945);
     text-align: center;
 }
 
-.trip-planning .card_list {
+.trip_planning .card_list {
     margin-top: 50px;
     padding: 21px 0;
     display: flex;
@@ -567,7 +567,7 @@ a {
     gap: 30px;
 }
 
-.trip-planning .card_item {
+.trip_planning .card_item {
     width: 272px;
     border-radius: 12px;
     color: var(--gray-2, #353945);
@@ -577,27 +577,27 @@ a {
     line-height: 1.52;
 }
 
-.trip-planning .card_item:first-child {
+.trip_planning .card_item:first-child {
     padding: 21px 36px 21px 35px;
     background: var(--secondary-green-green-10, #eef9f2);
 }
 
-.trip-planning .card_item:nth-child(2) {
+.trip_planning .card_item:nth-child(2) {
     padding: 21px 31px;
     background: var(--secondary-orange-orange-10, #fff4ee);
 }
 
-.trip-planning .card_item:nth-child(3) {
+.trip_planning .card_item:nth-child(3) {
     padding: 21px 50px;
     background: var(--primary-blue-10, #ebf1ff);
 }
 
-.trip-planning .card_item .icon {
+.trip_planning .card_item .icon {
     width: 24px;
     height: 24px;
 }
 
-.trip-planning .card_item > div {
+.trip_planning .card_item > div {
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -608,23 +608,23 @@ a {
     border-radius: 50%;
 }
 
-.trip-planning .card_item:first-child > div {
+.trip_planning .card_item:first-child > div {
     background: var(--secondary-green-success, #58c27d);
 }
 
-.trip-planning .card_item:nth-child(2) > div {
+.trip_planning .card_item:nth-child(2) > div {
     background: var(--secondary-orange-secondary, #fa8f54);
 }
 
-.trip-planning .card_item:nth-child(3) > div {
+.trip_planning .card_item:nth-child(3) > div {
     background: var(--primary-primary, #3b71fe);
 }
 
-.trip-planning .card_item .card_content {
+.trip_planning .card_item .card_content {
     margin-top: 16px;
 }
 
-.trip-planning .card_item a {
+.trip_planning .card_item a {
     margin-top: 28px;
     display: flex;
     justify-content: center;
@@ -632,7 +632,7 @@ a {
     gap: 3px;
 }
 
-.trip-planning .card_item a span {
+.trip_planning .card_item a span {
     color: var(--gray-2, #353945);
 }
 
@@ -813,11 +813,11 @@ a {
     align-items: center;
 }
 
-.book_steps .booking_steps_bottom .row .avatar{
+.book_steps .booking_steps_bottom .row .avatar {
     width: 70px;
-height: 70px;
-object-fit: cover;
-border-radius: 50%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .book_steps .booking_steps_bottom .row .column {
@@ -827,9 +827,125 @@ border-radius: 50%;
 }
 
 .book_steps .booking_steps_bottom .row .column .name {
-    color: var(--gray-2, #353945); 
+    color: var(--gray-2, #353945);
 }
 
 .book_steps .booking_steps_bottom .row .column .position {
-    color: var(--gray-3, #777E90);
+    color: var(--gray-3, #777e90);
+}
+
+/* Trip Booking */
+.trip_booking {
+    background: #eaf0ff;
+}
+.trip_booking .content {
+    padding: 71px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trip_booking .right {
+    width: 684px;
+}
+
+.trip_booking .right .title {
+    color: var(--gray-1, #23262f);
+}
+
+.trip_booking .right > .desc {
+    margin-top: 24px;
+    color: var(--gray-2, #353945);
+}
+
+.trip_booking .right > .row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.trip_booking .right > .row .card_brand {
+    padding: 22px 27px 22px 15px;
+    width: 158px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-6, #f4f5f6);
+    background: var(--white-white, #fff);
+    box-shadow: 0px 2.213px 8.851px 0px rgba(15, 15, 15, 0.08);
+}
+
+.trip_booking .right > .row .card_brand .brand_logo {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.trip_booking .right > .row .card_brand .brand_name {
+    color: var(--gray-2, #353945);
+    font-size: 1.4;
+    font-weight: 600;
+}
+
+.trip_booking .right > .row .card_brand .brand_desc {
+    color: var(--gray-3, #777e90);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5087;
+}
+
+.trip_booking .card {
+    width: 374px;
+    padding: 31px 24px 29px 24px;
+    border-radius: 30px;
+    background: var(--white-white, #fff);
+    box-shadow: 0px 14px 40px -15px rgba(15, 15, 15, 0.08);
+}
+
+.trip_booking .card .row {
+    display: flex;
+    gap: 17px;
+}
+
+.trip_booking .card .row .card_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-blue-20, #d8e3ff);
+}
+
+.trip_booking .card .row .title {
+    color: var(--gray-2, #353945);
+}
+
+.trip_booking .card .row .select_message {
+    margin-top: 4px;
+    color: var(--gray-3, #777e90);
+}
+
+.trip_booking .card .card_illustration {
+    margin-top: 24px;
+    position: relative;
+}
+
+.trip_booking .card .card_illustration > span {
+    position: absolute;
+    right: 9px;
+    top: 108px;
+    width: 87px;
+    height: 33px;
+    color: var(--white-white, #fff);
+    text-align: center;
+    line-height: 33px;
+    border-radius: 10px;
+    background: var(--secondary-orange-secondary, #fa8f54);
+}
+
+.trip_booking .card .card_illustration > svg {
+position: absolute;
+top: 98px;
+right: 87.5px;
 }
