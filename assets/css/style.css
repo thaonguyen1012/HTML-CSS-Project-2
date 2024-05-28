@@ -1187,8 +1187,8 @@ a {
 }
 
 .how_it_works .how_does_it_work .column .row .image .icon {
-width: 24px;
-height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 .how_it_works .how_does_it_work .column .row .sub-title {
@@ -1202,5 +1202,86 @@ height: 24px;
 }
 
 .how_it_works .how_does_it_work .column .row .column .desc {
+    color: var(--gray-3, #777e90);
+}
+
+/* Services */
+.service {
+    padding: 70px 0;
+    background: var(--primary-primary, #3b71fe);
+}
+
+.service .content {
+    text-align: center;
+}
+
+.service .content .title {
+    color: var(--white-white, #fff);
+}
+
+.service .content .desc {
+    margin-top: 10px;
+    color: var(--gray-6, #f4f5f6);
+}
+
+.service .content .row {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.service .content .row .card {
+    width: 236px;
+    padding: 25px 28px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--white-white, #fff);
+}
+
+.service .content .row .card span.image {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.service .content .row .card:first-child span.image {
+    background: var(--primary-primary, #3B71FE);
+}
+
+.service .content .row .card:nth-child(2) span.image {
+    background: var(--secondary-green-success, #58C27D);
+}
+
+.service .content .row .card:nth-child(3) span.image {
+    background: var(--secondary-orange-secondary, #FA8F54);
+} 
+
+.service .content .row .card:nth-child(4) span.image  {
+    background: var(--secondary-yellow-secondary-yellow, #FFD166);
+}
+
+.service .content .row .card .number {
+    margin-top: 18px;
+    color: var(--gray-2, #353945);
+text-align: center;
+font-size: 2.4rem;
+font-weight: 700;
+line-height: 1.5;
+}
+
+.service .content .row .card .desc {
     color: var(--gray-3, #777E90);
+text-align: center;
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 1.875;
 }
