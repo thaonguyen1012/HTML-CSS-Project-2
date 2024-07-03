@@ -1,0 +1,268 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .header .burger-menu {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991.98px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .header .burger-menu {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    /* Navbar */
+    .header .navbar {
+        max-width: calc(100% - 48px);
+    }
+
+    .header .navbar_middle {
+        display: none;
+    }
+
+    .header .burger-menu {
+        margin-left: 8px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0; 
+        visibility: hidden; 
+        transition: 0.3s ease;
+    }
+
+    .menu-dropdown {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        padding: 35px 0 0;
+        background: var(--white-white);
+        transform: translateY(-100%);
+        transition: 0.3s ease;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-dropdown {
+        transform: translateY(0);
+    }
+
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-content .navbar_middle {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .navbar_middle ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar_middle ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_middle ul li a {
+        display: block;
+        padding: 15px 0;
+        transition: all 0.3s;
+    }
+
+    .navbar_middle ul li a:hover {
+        color: var(--white-white);
+        background: var(--primary-primary, #3b71fe);
+    }
+    /* Hero */
+    .hero_info {
+        max-width: 126px;
+    }
+
+    .hero_title {
+        font-size: 16px;
+    }
+
+    .hero_desc {
+        font-size: 7px;
+    }
+
+    .hero_image {
+        display: none;
+    }
+
+    /* Trip Planning */
+    .trip_planning .card_list {
+        padding: 0 30px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .trip_planning .card_item {
+        scroll-snap-align: center;
+    }
+    /* Feature */
+    .feature {
+        padding: 30px 0;
+    }
+
+    .feature .title {
+        text-align: left;
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    .feature_grid {
+        margin-top: 30px;
+        grid-template-columns: 305px;
+        gap: 24px;
+    }
+
+    .feature_grid_item .row span.image {
+        width: 38px;
+        height: 38px;
+    }
+
+    .feature_grid_item .row .sub_title {
+        margin-left: 12px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .feature_grid_item .desc {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 24px;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 0 30px;
+    }
+    .footer_content .column:first-child {
+        max-width: 268px;
+    }
+
+    .footer_content .column:first-child .desc {
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 20px; /* 142.857% */
+    }
+
+    footer .copyright {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer .copyright .copyright_text {
+        color: var(--gray-4, #b1b5c3);
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Services */
+    .service {
+        padding: 30px 34px;
+    }
+
+    .service .content .title {
+        color: var(--white-white, #fff);
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .service .content > .desc {
+        margin-top: 12px;
+        color: var(--gray-6, #f4f5f6);
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .service .content .row {
+        margin-top: 24px;
+        gap: 24px;
+    }
+
+    .service .content .row .card {
+        width: 270px;
+    }
+
+    .service .content .row .card .number {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .service .content .row .card .desc {
+        font-size: 1.8rem;
+        line-height: 1.78;
+    }
+
+    /* Trip plan - Go plan */
+    .go_plan {
+        padding-top: 20px;
+        background: rgba(251, 246, 199, 0.8);
+    }
+
+    .go_plan .content {
+        flex-direction: column;
+        gap: 43px;
+    }
+    .go_plan .content .left {
+        max-width: 294px;
+    }
+
+    .go_plan .content .left .title {
+        margin-top: 0;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .go_plan .content .left .desc {
+        margin-top: 12px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .go_plan .content .left .btn-cta {
+        margin-top: 12px;
+        font-size: 1.2rem;
+        padding: 8px 20px;
+    }
+}

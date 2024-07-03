@@ -18,7 +18,8 @@
             rel="stylesheet"
         />
         <!-- Style CSS -->
-        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
         <!-- Favicon -->
         <link
             rel="apple-touch-icon"
@@ -99,6 +100,7 @@
     </head>
     <body>
         <!-- Header -->
+        <!-- PC, Tablet header -->
         <header class="header fixed">
             <nav class="navbar">
                 <!-- Logo -->
@@ -143,8 +145,51 @@
                             alt="profile avatar"
                             class="profile__avatar"
                     /></a>
+                    <!-- Burger menu icon -->
+                    <label for="menu-checkbox" class="burger-menu">
+                        <img
+                            src="./assets/image/icon/heading/Burger/Line.svg"
+                            alt="Burger-menu"
+                            style="width: 26px; height: 26px"
+                        />
+                    </label>
                 </div>
             </nav>
+        </header>
+        <!-- Mobile header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="menu-dropdown">
+                <div class="menu-content">
+                    <a href="#!"
+                        ><img
+                            src="./assets/image/icon/heading/Burger/tittle.svg"
+                            alt="Airtrav"
+                    /></a>
+                    <div class="navbar_middle">
+                        <ul class="navbar_middle_nav">
+                            <li>
+                                <a class="bodybodi-16-medium" href="#!"
+                                    >Things To Do</a
+                                >
+                            </li>
+                            <li>
+                                <a class="bodybodi-16-medium" href="#!">Tour</a>
+                            </li>
+                            <li>
+                                <a class="bodybodi-16-medium" href="#!">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
             <!-- Hero -->
@@ -167,17 +212,21 @@
                                 We make it easy to plan and book your next trip
                                 with a&nbsp;Day by Day itinerary.
                             </p>
-                            <a
-                                href="#!"
-                                class="hero_info_btn-cta headinginter-20-bold"
-                            >
-                                Plan a Trip
-                                <img
-                                    src="./assets/image/icon/heading/Line.svg"
-                                    alt="arrow-right"
-                                    class="hero_btn_arrow"
+                            <form class="hero_info_btn-cta">
+                                <input
+                                    class="headinginter-20-bold"
+                                    type="search"
+                                    placeholder="Plan a Trip"
+                                    required
                                 />
-                            </a>
+                                <button type="submit">
+                                    <img
+                                        src="./assets/image/icon/heading/Line.svg"
+                                        alt="arrow-right"
+                                        class="hero_btn_arrow"
+                                    />
+                                </button>
+                            </form>
                             <!-- Hero Review -->
                             <div class="hero_review">
                                 <span class="review_customer bodybodi-16-medium"
@@ -3296,7 +3345,7 @@
             <!-- Trip Booking -->
             <section class="trip_booking">
                 <div class="content">
-                    <div class="right">
+                    <div class="left">
                         <h2 class="title headingH1">
                             Easy Trip Booking Website
                         </h2>
@@ -3854,28 +3903,32 @@
             </section>
         </main>
         <!-- Footer -->
-        <footer style="height: 500px">
+        <footer>
             <div class="footer_content">
                 <div class="column">
-                    <img src="./assets/image/logo/footer/logo.svg" alt="logo" />
+                    <a href="#!"
+                        ><img
+                            src="./assets/image/logo/footer/logo.svg"
+                            alt="Airtrav"
+                    /></a>
                     <p class="desc bodybodi-16-regular">
                         Similarly, a loan taken out to buy a car may be secured
                         by the car. The duration of the loan.
                     </p>
-                    <div class="input_wrapper">
+                    <form class="subcribe">
                         <input
                             type="text"
                             placeholder="Enter your email"
-                            class="email_input"
+                            class="subcribe-email"
                         />
-                        <a href="#!" class="btn-input">
+                        <button class="subcribe-btn" type="submit">
                             <img
                                 src="./assets/image/logo/footer/icon/arrow-right.svg"
                                 alt="arrow-right-2"
                                 class="icon"
                             />
-                        </a>
-                    </div>
+                        </button>
+                    </form>
                 </div>
                 <div class="column">
                     <h3 class="title headingH3">Services</h3>
@@ -3939,9 +3992,9 @@
                 </div>
             </div>
             <div class="row copyright">
-                <span class="copyright_text"
-                    >Copyright&copy; 2021 UIHUT LLC. All rights reserved</span
-                >
+                <p class="copyright_text">
+                    Copyright&copy; 2021 UIHUT LLC. All rights reserved
+                </p>
                 <div class="social_icon">
                     <a href="#!"
                         ><img
