@@ -7,20 +7,47 @@
     .header .burger-menu {
         display: none;
     }
+
+    /* Trip Planning */
+    .trip_planning .card_list {
+        justify-content: center;
+    }
 }
 
-/* Tablet & mobile */
+/* TABLET & MOBILE */
 @media screen and (max-width: 991.98px) {
+    .hero {
+        display: none;
+    }
+
+    .trip_booking {
+        display: none;
+    }
+    /* Trip planning */
+    .trip_planning .card_list {
+        padding: 0 30px;
+        scroll-snap-type: x mandatory;
+        /* -webkit-overflow-scrolling: touch; */
+    }
+
+    .trip_planning .card_item {
+        scroll-snap-align: center;
+    }
 }
 
-/* Tablet */
+/* TABLET */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     .header .burger-menu {
         display: none;
     }
+
+    /* Partner */
+    .section_partner .partner {
+        padding: 40px 0;
+    }
 }
 
-/* Mobile */
+/* MOBILE - MEDIUM */
 @media screen and (max-width: 767.98px) {
     /* Navbar */
     .header .navbar {
@@ -40,8 +67,8 @@
         inset: 0;
         z-index: 100;
         background: rgba(0, 0, 0, 0.5);
-        opacity: 0; 
-        visibility: hidden; 
+        opacity: 0;
+        visibility: hidden;
         transition: 0.3s ease;
     }
 
@@ -74,7 +101,7 @@
 
     .menu-content .navbar_middle {
         width: 100%;
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .navbar_middle ul {
         flex-direction: column;
@@ -96,6 +123,71 @@
         color: var(--white-white);
         background: var(--primary-primary, #3b71fe);
     }
+
+    /* Partner */
+    .section_partner .partner {
+        padding: 25px 0;
+    }
+
+    /* Trip planning */
+    .trip_planning .content {
+        padding: 40px 0;
+    }
+
+    .trip_planning p.desc {
+        margin-top: 15px;
+    }
+
+    .trip_planning .card_list {
+        margin: 30px auto 0;
+    }
+
+
+     /* Footer */
+     .footer_content .column:first-child {
+        max-width: 100%;
+    }
+
+    footer .copyright {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer .copyright .copyright_text {
+        color: var(--gray-4, #b1b5c3);
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* MOBILE - SMALL */
+@media screen and (max-width: 375px) {
+    /* Navbar */
+    .header .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar_logo {
+        width: 70px;
+    }
+
+    .header .navbar_right_currency .currency {
+        font-size: 1.2rem;
+    }
+
+    .header .profile__avatar {
+        width: 24px;
+        height: 24px;
+    }
+
+    .navbar_right .vertical-line {
+        height: 20px;
+    }
+
     /* Hero */
     .hero_info {
         max-width: 126px;
@@ -114,15 +206,21 @@
     }
 
     /* Trip Planning */
-    .trip_planning .card_list {
-        padding: 0 30px;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
+    .trip_planning .content {
+        padding: 30px 0;
     }
 
-    .trip_planning .card_item {
-        scroll-snap-align: center;
+    .trip_planning .title {
+        font-size: 2.4rem;
+        line-height: 1;
+        letter-spacing: -0.24px;
     }
+
+    .trip_planning p.desc {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
     /* Feature */
     .feature {
         padding: 30px 0;
@@ -155,41 +253,6 @@
         margin-top: 16px;
         font-size: 12px;
         line-height: 1.5;
-    }
-
-    /* Footer */
-    footer {
-        padding: 30px 24px;
-    }
-
-    .footer_content {
-        flex-direction: column;
-        gap: 30px;
-        padding: 0 0 30px;
-    }
-    .footer_content .column:first-child {
-        max-width: 268px;
-    }
-
-    .footer_content .column:first-child .desc {
-        margin-top: 24px;
-        font-size: 14px;
-        line-height: 20px; /* 142.857% */
-    }
-
-    footer .copyright {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-
-    footer .copyright .copyright_text {
-        color: var(--gray-4, #b1b5c3);
-        font-size: 12px;
-        text-align: center;
     }
 
     /* Services */
@@ -242,6 +305,7 @@
         flex-direction: column;
         gap: 43px;
     }
+
     .go_plan .content .left {
         max-width: 294px;
     }
@@ -264,5 +328,22 @@
         margin-top: 12px;
         font-size: 1.2rem;
         padding: 8px 20px;
+    }
+
+     /* Footer */
+    footer {
+        padding: 30px 24px;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 0 30px;
+    }
+
+    .footer_content .column:first-child .desc {
+        margin-top: 24px;
+        font-size: 1.4rem;
+        line-height: 1.42;
     }
 }
