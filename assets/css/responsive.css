@@ -12,6 +12,11 @@
     .trip_planning .card_list {
         justify-content: center;
     }
+
+    /* Footer */
+    .footer_content .column:first-child {
+        max-width: 268px;
+    }
 }
 
 /* TABLET & MOBILE */
@@ -19,8 +24,13 @@
     .hero {
         display: none;
     }
-
+    .how_it_works {
+        display: none;
+    }
     .trip_booking {
+        display: none;
+    }
+    .go_plan {
         display: none;
     }
     /* Trip planning */
@@ -32,6 +42,22 @@
 
     .trip_planning .card_item {
         scroll-snap-align: center;
+    }
+
+    /* Booking steps */
+    .book_steps .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .book_steps .booking_steps {
+        margin-left: 0;
+        width: 568px;
+    }
+
+    .book_steps .create_trip,
+    .book_steps .booking_steps {
+        width: clamp(428px, 80%, 700px);
     }
 }
 
@@ -45,6 +71,8 @@
     .section_partner .partner {
         padding: 40px 0;
     }
+
+    /* Footer */
 }
 
 /* MOBILE - MEDIUM */
@@ -142,12 +170,7 @@
         margin: 30px auto 0;
     }
 
-
-     /* Footer */
-     .footer_content .column:first-child {
-        max-width: 100%;
-    }
-
+    /* Footer */
     footer .copyright {
         margin-top: 20px;
         display: flex;
@@ -165,7 +188,7 @@
 }
 
 /* MOBILE - SMALL */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 427.98px) {
     /* Navbar */
     .header .navbar {
         padding: 12px 0;
@@ -221,6 +244,99 @@
         line-height: 1.5;
     }
 
+    /* Booking steps */
+    .book_steps .content {
+        padding: 30px 0;
+        gap: 30px;
+    }
+
+    .book_steps .create_trip {
+        padding: 20px;
+    }
+
+    .book_steps .create_trip,
+    .book_steps .booking_steps {
+        width: 100%;
+    }
+    .book_steps .create_trip .card_top {
+        padding: 16.5px 25px;
+    }
+    .book_steps .create_trip .card_top .btn-input {
+        width: 80%;
+    }
+
+    .book_steps .create_trip .card_bottom {
+        width: 100%;
+    }
+
+    .book_steps .create_trip .card_top .setup_row .icon {
+        width: 13px;
+        height: 13px;
+        border: var(--white-white, #fff) solid 3.3px;
+    }
+
+    .book_steps .create_trip .card_bottom {
+        padding-bottom: 10px;
+    }
+
+    .booking_steps_top .title {
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+
+    .book_steps .booking_steps_top .desc {
+        margin-top: 12px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .book_steps .booking_steps_top .column {
+        margin-top: 14px;
+        gap: 14px;
+    }
+
+    .book_steps .booking_steps_top .column .row {
+        gap: 9px;
+    }
+
+    .book_steps .booking_steps_top .column .row .icon {
+        width: 14px;
+        height: 14px;
+        border: var(--primary-primary, #3b71fe) solid 3px;
+    }
+    .booking_steps_top .column .title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .book_steps .booking_steps_bottom {
+        margin-top: 14px;
+    }
+
+    .book_steps .booking_steps_bottom .quote {
+        font-size: 1.2rem;
+    }
+
+    .book_steps .booking_steps_bottom .row {
+        margin-top: 24px;
+    }
+
+    .book_steps .booking_steps_bottom .row .avatar {
+        width: 38px;
+        height: 38px;
+    }
+
+    .book_steps .booking_steps_bottom .row .column .name {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .book_steps .booking_steps_bottom .row .column .position {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
     /* Feature */
     .feature {
         padding: 30px 0;
@@ -330,7 +446,7 @@
         padding: 8px 20px;
     }
 
-     /* Footer */
+    /* Footer */
     footer {
         padding: 30px 24px;
     }

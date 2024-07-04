@@ -685,7 +685,7 @@ button {
     padding: 69px 0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .book_steps .create_trip {
@@ -762,7 +762,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 363px;
-    height: 80px;
+    padding-bottom: 25px;
     border-radius: 0px 0px 30px 30px;
     background-color: var(--white-white, #fff);
 }
@@ -802,7 +802,6 @@ button {
 
 .book_steps .booking_steps {
     margin-left: auto;
-    width: 568px;
 }
 
 .book_steps .booking_steps_top {
@@ -1449,7 +1448,7 @@ footer {
 }
 
 .footer_content .column:first-child {
-    max-width: 268px;
+    max-width: 100%;
 }
 
 .footer_content .column:first-child .desc {
@@ -1533,6 +1532,3 @@ footer .copyright .social_icon {
     align-items: center;
     gap: 14px;
 }
-
-
-
