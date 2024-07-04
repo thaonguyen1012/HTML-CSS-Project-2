@@ -887,6 +887,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .trip_booking .left {
@@ -906,7 +907,6 @@ button {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
     gap: 20px;
 }
 
@@ -1341,7 +1341,6 @@ button {
 
 .feature_grid .row {
     display: flex;
-    align-items: center;
 }
 
 .feature_grid_item .row span.image {

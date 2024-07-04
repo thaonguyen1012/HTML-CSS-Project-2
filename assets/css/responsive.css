@@ -27,9 +27,6 @@
     .how_it_works {
         display: none;
     }
-    .trip_booking {
-        display: none;
-    }
     .go_plan {
         display: none;
     }
@@ -58,6 +55,36 @@
     .book_steps .create_trip,
     .book_steps .booking_steps {
         width: clamp(428px, 80%, 700px);
+    }
+
+    /* Trip booking */
+    .trip_booking .content {
+        flex-direction: column;
+    }
+    .trip_booking .left .title,
+    .trip_booking .left .desc {
+        text-align: center;
+    }
+
+    .trip_booking .left > .row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .trip_booking .left > .row > a {
+        width: 156px;
+        scroll-snap-align: start;
+    }
+
+    /* Features */
+    .feature_grid {
+        margin-top: 30px;
+        row-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .feature .title {
+        text-align: start;
     }
 }
 
@@ -337,6 +364,15 @@
         font-size: 1rem;
         line-height: 1.5;
     }
+
+    /* Trip booking */
+    .trip_booking .left {
+        order: 2;
+    }
+    .trip_booking .left {
+        order: 1;
+    }
+
     /* Feature */
     .feature {
         padding: 30px 0;
@@ -350,7 +386,6 @@
 
     .feature_grid {
         margin-top: 30px;
-        grid-template-columns: 305px;
         gap: 24px;
     }
 
