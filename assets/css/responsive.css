@@ -13,6 +13,11 @@
         justify-content: center;
     }
 
+    /* Go Plan */
+    .go_plan_img-mobile {
+        display: none;
+    }
+
     /* Footer */
     .footer_content .column:first-child {
         max-width: 268px;
@@ -22,12 +27,6 @@
 /* TABLET & MOBILE */
 @media screen and (max-width: 991.98px) {
     .hero {
-        display: none;
-    }
-    .how_it_works {
-        display: none;
-    }
-    .go_plan {
         display: none;
     }
     /* Trip planning */
@@ -61,10 +60,6 @@
     .trip_booking .content {
         flex-direction: column;
     }
-    .trip_booking .left .title,
-    .trip_booking .left .desc {
-        text-align: center;
-    }
 
     .trip_booking .left > .row {
         flex-wrap: nowrap;
@@ -74,6 +69,11 @@
     .trip_booking .left > .row > a {
         width: 156px;
         scroll-snap-align: start;
+    }
+
+    /* How does it work */
+    .how_it_works .content {
+        flex-direction: column;
     }
 
     /* Features */
@@ -86,6 +86,11 @@
     .feature .title {
         text-align: start;
     }
+
+         /* Go Plan */
+         .go_plan_img-mobile {
+            display: none;
+        }
 }
 
 /* TABLET */
@@ -97,6 +102,12 @@
     /* Partner */
     .section_partner .partner {
         padding: 40px 0;
+    }
+
+    /* Trip booking */
+    .trip_booking .left .title,
+    .trip_booking .left .desc {
+        text-align: center;
     }
 
     /* Footer */
@@ -195,6 +206,16 @@
 
     .trip_planning .card_list {
         margin: 30px auto 0;
+    }
+
+    /* Trip Booking */
+    .trip_booking .content {
+        align-items: start;
+    }
+
+    /* Go Plan */
+    .go_plan {
+        padding-top: 30px;
     }
 
     /* Footer */
@@ -479,6 +500,16 @@
         margin-top: 12px;
         font-size: 1.2rem;
         padding: 8px 20px;
+    }
+
+    .go_plan .illustration {
+        display: none;
+    }
+
+    .go_plan_img-mobile {
+        display: inline-block;
+        width: 327px;
+        max-width: 95%;
     }
 
     /* Footer */
