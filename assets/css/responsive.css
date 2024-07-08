@@ -58,6 +58,7 @@
     .book_steps .create_trip,
     .book_steps .booking_steps {
         width: clamp(428px, 80%, 700px);
+        max-width: 100%;
     }
 
     /* Trip booking */
@@ -309,10 +310,6 @@
         padding: 20px;
     }
 
-    .book_steps .create_trip,
-    .book_steps .booking_steps {
-        width: 100%;
-    }
     .book_steps .create_trip .card_top {
         padding: 16.5px 25px;
     }
@@ -394,6 +391,10 @@
     }
 
     /* Trip booking */
+    .trip_booking .content {
+        padding: 30px 0px;
+    }
+
     .trip_booking .left {
         order: 2;
     }
@@ -407,9 +408,17 @@
     }
 
     .trip_booking .left .title {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
+    .trip_booking .left > .desc {
+        font-size: 1.2rem;
+        margin-top: 18px;
+    }
+
+    .trip_booking .left > .row {
+        margin-top: 20px;
+    }
     /* Feature */
     .feature {
         padding: 30px 0;
@@ -445,7 +454,7 @@
 
     /* Services */
     .service {
-        padding: 30px 34px;
+        padding: 30px 0;
     }
 
     .service .content .title {
