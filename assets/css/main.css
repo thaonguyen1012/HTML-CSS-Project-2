@@ -891,7 +891,9 @@ button {
 }
 
 .trip_booking .left {
-    max-width: 684px;
+    width: 684px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .trip_booking .left .title {
@@ -906,12 +908,11 @@ button {
 .trip_booking .left > .row {
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
     gap: 20px;
 }
 
 .trip_booking .left > .row > a {
-    width: calc((100% - 60px) / 3);
+    flex: 0 0 156px;
 }
 
 .trip_booking .left > .row .card_brand {
@@ -977,6 +978,10 @@ button {
 .trip_booking .card .card_illustration {
     margin-top: 24px;
     position: relative;
+}
+
+.trip_booking .card .card_illustration > img.illustration {
+    width: 100%;
 }
 
 .trip_booking .card .card_illustration > span {

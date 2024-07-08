@@ -13,6 +13,8 @@
         justify-content: center;
     }
 
+    /* Trip Booking */
+
     /* Go Plan */
     .go_plan_img-mobile {
         display: none;
@@ -26,9 +28,11 @@
 
 /* TABLET & MOBILE */
 @media screen and (max-width: 991.98px) {
-    .hero {
+    /* Hero */
+    .hero_image_wrap {
         display: none;
     }
+
     /* Trip planning */
     .trip_planning .card_list {
         padding: 0 30px;
@@ -59,16 +63,12 @@
     /* Trip booking */
     .trip_booking .content {
         flex-direction: column;
+        align-items: start;
     }
 
     .trip_booking .left > .row {
         flex-wrap: nowrap;
         overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
-    .trip_booking .left > .row > a {
-        width: 156px;
-        scroll-snap-align: start;
     }
 
     /* How does it work */
@@ -87,14 +87,18 @@
         text-align: start;
     }
 
-         /* Go Plan */
-         .go_plan_img-mobile {
-            display: none;
-        }
+    /* Go Plan */
+    .go_plan_img-mobile {
+        display: none;
+    }
 }
 
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .mobile-header {
+        display: none;
+    }
+
     .header .burger-menu {
         display: none;
     }
@@ -105,10 +109,6 @@
     }
 
     /* Trip booking */
-    .trip_booking .left .title,
-    .trip_booking .left .desc {
-        text-align: center;
-    }
 
     /* Footer */
 }
@@ -190,6 +190,8 @@
         background: var(--primary-primary, #3b71fe);
     }
 
+    /* Hero */
+
     /* Partner */
     .section_partner .partner {
         padding: 25px 0;
@@ -260,20 +262,25 @@
     }
 
     /* Hero */
-    .hero_info {
-        max-width: 126px;
+    .section_hero {
+        height: 100%;
+        padding-bottom: 20px;
     }
 
-    .hero_title {
-        font-size: 16px;
+    .headinghero {
+        font-size: 5rem;
     }
 
-    .hero_desc {
-        font-size: 7px;
+    .hero_info_btn-cta {
+        margin: 35px auto 0 0;
     }
 
-    .hero_image {
+    .hero_info .ornament {
         display: none;
+    }
+
+    .hero_review {
+        margin-top: 35px;
     }
 
     /* Trip Planning */
@@ -390,8 +397,17 @@
     .trip_booking .left {
         order: 2;
     }
-    .trip_booking .left {
+
+    .trip_booking > .card {
         order: 1;
+    }
+
+    .trip_booking .card {
+        width: 326px;
+    }
+
+    .trip_booking .left .title {
+        font-size: 3rem;
     }
 
     /* Feature */
