@@ -76,6 +76,9 @@
     .how_it_works .content {
         flex-direction: column;
     }
+    .how_it_works .how_does_it_work {
+        width: 100%;
+    }
 
     /* Features */
     .feature_grid {
@@ -214,6 +217,26 @@
     /* Trip Booking */
     .trip_booking .content {
         align-items: start;
+    }
+
+    /* How it works */
+    .how_it_works .content .illustration {
+        height: 710px;
+    }
+
+    .how_it_works .content .illustration .new_travellers {
+        top: 0;
+        transform: translateY(-80%);
+    }
+
+    .how_it_works .content .illustration .card {
+        left: calc(100% / 2);
+        transform: translateX(-50%);
+    }
+
+    .how_it_works .content .illustration .profile {
+        z-index: 1;
+        top: 450px;
     }
 
     /* Go Plan */
@@ -452,6 +475,38 @@
         line-height: 1.5;
     }
 
+    /* How it works */
+    .how_it_works .how_does_it_work .title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: normal;
+    }
+
+    .how_it_works .how_does_it_work .desc {
+        color: var(--gray-3, #777E90);
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .how_it_works .how_does_it_work .column .row .image {
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+    }
+
+    .how_it_works .how_does_it_work .column .row {
+        gap: 18px;
+    }
+
+    .how_it_works .how_does_it_work .column .row .column {
+        gap: 6px;
+    }
+
+    .how_it_works .how_does_it_work .column .row .sub_title {
+        font-size: 1.8rem;
+    }
     /* Services */
     .service {
         padding: 30px 0;
